@@ -36,7 +36,7 @@
         <dict>
           <key>CFBundleURLSchemes</key>
           <array>
-            <string>lawnmower</string>
+            <string>lawnmowerio</string>
           </array>
         </dict>
       </array>
@@ -59,7 +59,7 @@
 
     <config-file target="AndroidManifest.xml" parent="/*/application/activity">
       <intent-filter>
-        <data android:scheme="lawnmower"/>
+        <data android:scheme="lawnmowerio"/>
         <action android:name="android.intent.action.VIEW" />
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
@@ -71,7 +71,7 @@
   <platform name="windows8">
     <config-file target="package.appxmanifest" parent="/Package/Applications/Application/Extensions">
       <Extension Category="windows.protocol" StartPage="www/index.html">
-        <Protocol Name="lawnmower" />
+        <Protocol Name="lawnmowerio" />
       </Extension>
     </config-file>
     
@@ -84,17 +84,17 @@
   <platform name="windows">
     <config-file target="package.windows.appxmanifest" parent="/Package/Applications/Application/Extensions">
       <Extension Category="windows.protocol" StartPage="www/index.html">
-        <Protocol Name="lawnmower" />
+        <Protocol Name="lawnmowerio" />
       </Extension>
     </config-file>
     <config-file target="package.windows80.appxmanifest" parent="/Package/Applications/Application/Extensions">
       <Extension Category="windows.protocol" StartPage="www/index.html">
-        <Protocol Name="lawnmower" />
+        <Protocol Name="lawnmowerio" />
       </Extension>
     </config-file>
     <config-file target="package.phone.appxmanifest" parent="/Package/Applications/Application/Extensions">
       <Extension Category="windows.protocol" StartPage="www/index.html">
-        <Protocol Name="lawnmower" />
+        <Protocol Name="lawnmowerio" />
       </Extension>
     </config-file>
     <js-module src="www/windows/LaunchMyApp.js" name="LaunchMyApp">
